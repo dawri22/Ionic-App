@@ -1,0 +1,8 @@
+{
+  "name": "Parcial",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "30a08ac1"
+}
