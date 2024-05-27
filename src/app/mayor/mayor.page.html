@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-menu-button></ion-menu-button>
+    <ion-title>Mayor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Mayor</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+
+
+  <ion-list>
+
+  <ion-item>
+    <ion-input [(ngModel)]="num1" type="number" placeholder="Ingrese el numero 1"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="num2" type="number" placeholder="Ingrese el numero 2"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button (click)="mayor()" shape="round">Calcular</ion-button>
+  </ion-item>
+  <ion-item *ngIf="resul">
+    <ion-label>El numero mayor es: {{resul}}</ion-label>
+  </ion-item>
+</ion-list>
+
+</ion-content>
